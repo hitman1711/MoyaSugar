@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/devxoul/MoyaSugar'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Suyeol Jeon' => 'devxoul@gmail.com' }
-  s.source           = { :git => 'https://github.com/devxoul/MoyaSugar.git',
+  s.source           = { :git => 'https://github.com/hitman1711/MoyaSugar',
                          :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
@@ -21,13 +21,13 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |ss|
     ss.source_files = 'Sources/MoyaSugar/*.swift'
     ss.frameworks   = 'Foundation'
-    ss.dependency 'Moya', '>= 8.0.0'
+    ss.dependency 'Moya', '8.0.5'
   end
 
   s.subspec 'RxSwift' do |ss|
     ss.source_files = 'Sources/RxMoyaSugar/*.swift'
     ss.dependency 'MoyaSugar/Core'
-    ss.dependency 'Moya/RxSwift', '>= 8.0.0'
+    ss.dependency 'Moya/RxSwift', '~> 8.0.0'
     ss.dependency 'RxSwift', '>= 3.0.0'
   end
 end
