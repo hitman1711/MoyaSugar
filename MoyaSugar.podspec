@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MoyaSugar'
-  s.version          = '0.4.1'
+  s.version          = '1.0.0'
   s.summary          = '🍯 Syntactic sugar for Moya'
   s.homepage         = 'https://github.com/devxoul/MoyaSugar'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -13,9 +13,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
-  s.pod_target_xcconfig = {
-    'SWIFT_VERSION' => '3.1'
-  }
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |ss|
