@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/devxoul/MoyaSugar'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Suyeol Jeon' => 'devxoul@gmail.com' }
-  s.source           = { :git => 'https://github.com/devxoul/MoyaSugar.git',
+  s.source           = { :git => 'https://github.com/hitman1711/MoyaSugar',
                          :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
